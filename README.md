@@ -7,6 +7,9 @@ Optimizing Cloud Resource Allocation through Combined Proactive Horizontal Pod A
 Project Details:
 
 -Application Deployed :- TeaStore
+
 -Kubernetes Platform:- Microsoft Azure
+
 -Load Testing software:- JMeter
+
 -Monitoring software:- Prometheus and Grafana
