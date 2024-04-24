@@ -12,4 +12,4 @@ Project Details:
 
 -Load Testing software:- Apache JMeter : https://jmeter.apache.org/
 
--Monitoring software:- Prometheus and Grafana
+-Monitoring software:- Prometheus and Grafana using Helm Charts : https://github.com/helm
