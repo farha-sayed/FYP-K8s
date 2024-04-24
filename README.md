@@ -10,6 +10,6 @@ Project Details:
 
 -Kubernetes Platform:- Microsoft Azure
 
--Load Testing software:- JMeter
+-Load Testing software:- Apache JMeter
 
 -Monitoring software:- Prometheus and Grafana
