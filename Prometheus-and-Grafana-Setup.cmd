@@ -1,11 +1,11 @@
-#Script for installing and setting up Prometheus and Grafana (to be repeated on each cluster):
+REM Script for installing and setting up Prometheus and Grafana (to be repeated on each cluster):
 
 
-#1. Open Azure Cloud Shell and connect to the cluster
+REM 1. Open Azure Cloud Shell and connect to the cluster
 
-#2. Download Helm onto the cluster
+REM 2. Download Helm onto the cluster
 
-#3. Download prometheus-community repository Helm Chart 
+REM 3. Download prometheus-community repository Helm Chart 
   helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 
 #4. Install prometheus stack into a new namespace called monitoring
