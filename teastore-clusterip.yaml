@@ -1,4 +1,4 @@
-#To be run with kubectl create -f teastore-clusterip.yaml in Azure Cloud Shell once connected to a cluster
+#To be run with [kubectl create -f teastore-clusterip.yaml] in Azure Cloud Shell once connected to a cluster
 ---
 apiVersion: apps/v1
 kind: Deployment
