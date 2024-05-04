@@ -6,7 +6,7 @@ metadata:
   name: overprovisioning 
   namespace: default 
 spec: 
-  replicas: 1 #only one overprovisioned pod
+  replicas: 1 #only one overprovisioning pod
   selector: 
     matchLabels: 
       run: overprovisioning 
