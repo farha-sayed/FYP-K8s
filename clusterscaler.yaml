@@ -1,30 +1,25 @@
-apiVersion: scheduling.k8s.io/v1
-kind: PriorityClass
-metadata:
- name: overprovisioning
-value: -1
-globalDefault: false
-description: "Priority class used by overprovisioning."
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
- name: overprovisioning
-spec:
- replicas: 1
- selector:
-   matchLabels:
-     run: overprovisioning
- template:
-   metadata:
-     labels:
-       run: overprovisioning
-   spec:
-     priorityClassName: overprovisioning # <--
-     containers:
-       - name: pause
-         image: k8s.gcr.io/pause
-         resources:
-           requests:
-             cpu: 900m
-             memory: 3.8G
+#cluster v5 (current)
+
+apiVersion: apps/v1 
+kind: Deployment 
+metadata: 
+  name: overprovisioning 
+  namespace: default 
+spec: 
+  replicas: 1 #only one overprovisioned pod
+  selector: 
+    matchLabels: 
+      run: overprovisioning 
+  template: 
+    metadata: 
+      labels: 
+        run: overprovisioning 
+    spec: 
+      priorityClassName: overprovisioning 
+      containers: 
+      - name: pause 
+        image: registry.k8s.io/pause:3.6 
+        resources: 
+          requests: 
+            cpu: '3400m' #set to occupy most of the spare node, only allowing system pods to be in the same node
+            memory: '6G' #similar to cpu requests, set high to keep the spare node occupied in the start state
