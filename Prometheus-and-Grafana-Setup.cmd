@@ -13,6 +13,8 @@ REM 4. Install prometheus stack into a new namespace called monitoring
 
 REM 5. Check the newly installed features
   kubectl get all -n monitoring
+REM OR, using 
+  kubectl --namespace monitoring get pods -l "release=prometheus"
 
 REM 6. Change the Alert Manager, Prometheus and Grafana service types to LoadBalancer by using the following commands to view and edit them respectively:
 
