@@ -2,7 +2,7 @@
 Proactive Autoscaling in Kubernetes: An experiment
 
 
-Optimizing Cloud Resource Allocation through Combined Proactive Horizontal Pod Autoscaling and Cluster Autoscaling in Kubernetes
+"Optimizing Cloud Resource Allocation through Combined Proactive Horizontal Pod Autoscaling and Cluster Autoscaling in Kubernetes"
 
 Project Details:
 
